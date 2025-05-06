@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalVillas - Spa Resort and Hotel</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="logo">
+                <img src="img/logo.jpg" alt="RoyalVillas Logo">
+            </div>
+        </div>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-equipo">
+            <div class="info-equipo">
+                <p class="subtitulo">Our Team</p>
+                <h2 class="titulo">A Dedicated Team of Experts</h2>
+                <p class="descripcion">
+                    Passion, experience and a fierce commitment to education are 
+                    the cornerstones of our success in the beauty industry
+                </p>
+                <p class="texto-detalle">
+                    We believe that being the largest SPA in the area is not enough in itself to satisfy the 
+                    needs of our customers. For this reason we have built up a staff of specialized 
+                    professionals who are proud to welcome you to our hotel, present What We Do, listen 
+                    to your needs and guarantee well-being and relaxation during your stay at our SPA 
+                    Resort.
+                </p>
+                <p class="texto-detalle">
+                    Everyone in our team is a certified specialist capable of delivering a unique service of 
+                    high quality you won't find anywhere else in modern spa and resort industry.
+                </p>
+                <button class="boton-modal" id="abrirModal">
+                    MODAL <i class="fas fa-list"></i>
+                </button>
+            </div>
+
+            <div class="miembros-equipo">
+                <div class="miembro">
+                    <div class="foto-perfil">
+                        <img src="img/foto1.jpg" alt="Jessica Cooper">
+                    </div>
+                    <h3 class="nombre">Jessica Cooper</h3>
+                    <p class="puesto">Esthetician</p>
+                    <div class="redes-sociales">
+                        <a href="#" class="red-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="red-social"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    <button class="boton-contacto">GET IN TOUCH</button>
+                </div>
+
+                <div class="miembro">
+                    <div class="foto-perfil">
+                        <img src="img/foto2.jpg" alt="Robert Wagner">
+                    </div>
+                    <h3 class="nombre">Robert Wagner</h3>
+                    <p class="puesto">Hairdresser</p>
+                    <div class="redes-sociales">
+                        <a href="#" class="red-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="red-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="red-social"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    <button class="boton-contacto">GET IN TOUCH</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor">
+            &copy; 2025 RoyalVillas. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Modal de contacto -->
+    <div class="modal" id="modalContacto">
+        <div class="contenido-modal">
+            <span class="cerrar-modal">&times;</span>
+            <h2>Contact Us</h2>
+            <p>If you have any questions concerning our services, please fill out the contact form below.</p>
+            
+            <form class="formulario-contacto">
+                <div class="campo-formulario">
+                    <input type="text" id="nombre" placeholder="Name *" required>
+                </div>
+                <div class="campo-formulario">
+                    <input type="email" id="email" placeholder="E-mail *" required>
+                </div>
+                <div class="campo-formulario">
+                    <textarea id="mensaje" placeholder="Message *" required></textarea>
+                </div>
+                <button type="submit" class="boton-enviar">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
